@@ -1,0 +1,122 @@
+<html >
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="ika.js"></script>
+		<script src="index.js"></script>
+		<link href="main.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Bubblegum+Sans|Unkempt|Luckiest+Guy|Coming+Soon|Amatic+SC" rel="stylesheet" type="text/css">
+	</head>
+	<body style="background-color:#9c27b0; height:1000px; margin:0px; padding:0px;">
+		<canvas id="ika_swim" height="263px" width="1263px" style="position:fixed; top:0px; z-index:-1;"></canvas>
+		<div id="Menu"><h1 style="color:white; font-family:paintball; font-size:50px; padding:20px;width:35%;display:inline-block;margin:0px;">Splatooniverse</h1>
+		<div id="ColorHoverContainer">
+			<div id="Color"></div>
+			<div id="Colors" style="position:absolute;right:35px;top:70px;z-index:1;display:none;"></div>
+		</div>
+		<!--<select id="splatfest-region"  title="Select the region of your Splatfests">
+							<option value="na" selected="">North America</option>
+							<option value="eu">Europe and Oceania</option>
+							<option value="jp">Japan</option>
+						</select>--></div>
+		<div id="MapContainer">
+			<div id="TimeSlot1" class="timeslot">
+				<h1 id="Time1" class="Time">Now until 10:00pm</h1>
+				<div id="Map1TurfWars" class="map">
+					<div  class="MapHeader"><h1 id="MapHeaderTurfWar1">Turf Wars</h1></div>
+					<div id="MapTurfWarImageRight1" class="MapImagesRight">
+						<image id="TurfWarRightImage1" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="TurfWarRightP1" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+					<div id="MapTurfWarImageLeft1" class="MapImagesLeft">
+						<image id="TurfWarLeftImage1" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="TurfWarLeftP1" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+				</div>
+				<div id="Map1Ranked" class="map">
+					<div  class="MapHeader"><h1 id="MapHeaderRanked1">Rain Maker</h1></div>
+					<div id="MapRankedWarImageRight1" class="MapImagesRight">
+						<image id="RankedRightImage1" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="RankedRightP1" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+					<div id="MapRankedWarImageLeft1" class="MapImagesLeft">
+						<image id="RankedLeftImage1" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="RankedLeftP1" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+				</div>
+			</div>
+			<div id="TimeSlot2" class="timeslot">
+			<h1 id="Time2" class="Time">10pm to 2am (tommorrow)</h1>
+				<div id="Map2TurfWars" class="map">
+					<div  class="MapHeader"><h1 id="MapHeaderTurfWar2">Turf Wars</h1></div>
+					<div id="MapTurfWarImageRight2" class="MapImagesRight">
+						<image id="TurfWarRightImage2" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="TurfWarRightP2" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+					<div id="MapTurfWarImageLeft2" class="MapImagesLeft">
+						<image  id="TurfWarLeftImage2" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="TurfWarLeftP2" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+				</div>
+				<div id="Map2Ranked" class="map">
+					<div  class="MapHeader"><h1 id="MapHeaderRanked2">Tower Control</h1></div>
+					<div id="MapRankedWarImageRight2" class="MapImagesRight">
+						<image id="RankedRightImage2" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="RankedRightP2" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+					<div id="MapRankedWarImageLeft2" class="MapImagesLeft">
+						<image id="RankedLeftImage2" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="RankedLeftP2" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+				</div>
+			</div>
+			<div id="TimeSlot3" class="timeslot">
+			<h1 id="Time3" class="Time">2am to 6am (tomorrow)</h1>
+				<div id="Map3TurfWars" class="map">
+					<div  class="MapHeader"><h1 id="MapHeaderTurfWar3">Turf Wars</h1></div>
+					<div id="MapTurfWarImageRight3" class="MapImagesRight">
+						<image id="TurfWarRightImage3" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="TurfWarRightP3" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+					<div id="MapTurfWarImageLeft3" class="MapImagesLeft">
+						<image id="TurfWarLeftImage3" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="TurfWarLeftP3" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+				</div>
+				<div id="Map3Ranked" class="map">
+					<div  class="MapHeader"><h1 id="MapHeaderRanked3">Splat Zones</h1></div>
+					<div id="MapRankedWarImageRight3" class="MapImagesRight">
+						<image id="RankedRightImage3" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="RankedRightP3" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+					<div id="MapRankedWarImageLeft3" class="MapImagesLeft">
+						<image id="RankedLeftImage3" class="MapImages" src="images/maps/walleye-warehouse.jpg"/>
+						<p id="RankedLeftP3" style="background-color:white; color:black;margin:0px auto;padding:5px;width:180px">Walleye Warehouse</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="CommentContainer" style="padding:30px;">
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//splatooniverse-azurewebsites-net.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                    
+		</div>
+	</body>
+</html>
